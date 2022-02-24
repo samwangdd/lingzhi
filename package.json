@@ -1,0 +1,22 @@
+{
+  "name": "lingzhi",
+  "version": "1.0.0",
+  "description": "Antd components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samwangdd/lingzhi.git"
+  },
+  "keywords": [
+    "lingzhi"
+  ],
+  "author": "samwangdd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samwangdd/lingzhi/issues"
+  },
+  "homepage": "https://github.com/samwangdd/lingzhi#readme"
+}
