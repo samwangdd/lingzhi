@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/samwangdd/lingzhi/issues"
   },
-  "homepage": "https://github.com/samwangdd/lingzhi#readme"
+  "homepage": "https://github.com/samwangdd/lingzhi#readme",
+  "dependencies": {
+    "antd": "^4.18.9",
+    "react": "^17.0.2",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39"
+  }
 }

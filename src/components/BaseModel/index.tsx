@@ -2,14 +2,13 @@ import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useState } 
 import { Form, Modal } from 'antd';
 import { FormInstance } from 'antd/lib/form';
 import RenderFields from '@/components/RenderFields';
-import { ItResourceITResource } from '@/api/apis';
 
 interface Props {
   columns: any;
   title: string;
-  onSubmit: (values) => void;
+  onSubmit: (values: any) => void;
   onSuccess?: () => void;
-  record?: ItResourceITResource;
+  record?: any;
   editData?: any;
 }
 

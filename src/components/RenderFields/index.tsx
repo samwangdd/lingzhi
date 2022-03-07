@@ -2,7 +2,7 @@ import React, { ReactChild } from 'react';
 import { Col, Form, Input, Select } from 'antd';
 import { ColumnType, TableProps } from 'antd/lib/table';
 import { ColProps } from 'antd/lib/grid';
-import replaceKeys from '@/utils/replaceKeys';
+import {replaceKeys} from '@/utils';
 
 export interface IColumn extends ColumnType<any>, TableProps<any> {
   title: any;
