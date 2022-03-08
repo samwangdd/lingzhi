@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   base: '/lingzhi/',
-  publicPath: '/lingzhi/public/',
+  publicPath: '/lingzhi/',
   title: 'lingzhi',
   favicon: '/logo.png',
   logo: '/logo.png',
