@@ -1,8 +1,8 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/lingzhi/',
-  // publicPath: process.env.NODE_ENV === 'production' ? '/lingzhi/' : '/',
+  base: '/lingzhi',
+  publicPath: process.env.NODE_ENV === 'production' ? '/lingzhi/' : '/',
   title: 'lingzhi',
   favicon: '/logo.png',
   logo: '/logo.png',
