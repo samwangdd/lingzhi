@@ -13,18 +13,18 @@ export interface IColumn extends ColumnType<any>, TableProps<any> {
   rules?: { [key: string]: string | boolean | RegExp }[];
 }
 
-export interface RenderFieldsProps {
+export interface ProFieldsProps {
   columns: IColumn[];
   wrapConfig?: ColProps; // 包装（布局）组件属性
 }
 
-const RenderFields: React.FC<RenderFieldsProps> = (props) => {
+const ProFields: React.FC<ProFieldsProps> = (props) => {
   const { columns, wrapConfig = { span: 6 }, children } = props;
   const _children: ReactChild[] = children ? [children as ReactChild] : [];
 
   const filter = columns?.filter((item) => !Boolean(item.hideInSearch));
 
-  for (let i = 0; i < filter.length; i++) {
+  for (let i = 0; i < filter?.length; i++) {
     const { title: label, dataIndex: name, component: Comp, config, valueEnum, rules } = filter[i];
 
     _children.push(
@@ -63,4 +63,4 @@ const Component = ({ type, valueEnum, ...config }) => {
   }
 };
 
-export default RenderFields;
+export default ProFields;
