@@ -1,7 +1,7 @@
 import React from 'react';
 import DTreeNodeAction from '../DTreeNodeAction';
 import DTreeNodeEditing from '../DTreeNodeEditing';
-import styles from './index.module.scss?module';
+import styles from './index.less';
 
 // FIXME: 组件设计的不够优雅，需要重构
 // 比如 operateType 状态管理有点混乱
