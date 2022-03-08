@@ -38,7 +38,7 @@ const RenderFields: React.FC<RenderFieldsProps> = (props) => {
             Comp
           )}
         </Form.Item>
-      </Col>
+      </Col>,
     );
   }
 

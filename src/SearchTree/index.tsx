@@ -78,7 +78,7 @@ const SearchTree = (props: SearchTreeProps) => {
           title,
         };
       }),
-    [dataClone, searchValue]
+    [dataClone, searchValue],
   );
 
   return (
