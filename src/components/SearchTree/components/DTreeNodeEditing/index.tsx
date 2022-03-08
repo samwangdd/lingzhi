@@ -3,7 +3,7 @@ import { Button, Input, message } from 'antd';
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 import { awaitTo } from '@/utils/index';
 import { changeProps, deleteProps } from '../../utils';
-import styles from './index.module.scss';
+import styles from './index.less';
 
 const DTreeNodeEditing = ({ node, changeData, treeData, onSubmit }) => {
   const [value, setValue] = useState(node.title);
