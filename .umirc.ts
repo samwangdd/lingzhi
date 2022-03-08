@@ -1,12 +1,11 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/lingzhi',
-  publicPath: '/lingzhi/',
+  base: '/lingzhi/',
+  publicPath: '/lingzhi/public/',
   title: 'lingzhi',
-  favicon:
-    'https://user-images.githubusercontent.com/29837369/157150118-5217cd34-421e-432d-b81a-6f5ec033badc.png',
-  logo: 'https://user-images.githubusercontent.com/29837369/157150118-5217cd34-421e-432d-b81a-6f5ec033badc.png',
+  favicon: '/logo.png',
+  logo: '/logo.png',
   outputPath: 'docs-dist',
   // more config: https://d.umijs.org/config
 });
