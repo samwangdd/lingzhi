@@ -1,1 +1,2 @@
-export {replaceKeys}  from './replaceKeys'
+export { replaceKeys } from './replaceKeys';
+export { awaitTo } from './awaitTo';

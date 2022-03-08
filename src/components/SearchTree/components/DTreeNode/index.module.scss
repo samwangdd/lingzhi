@@ -1,0 +1,29 @@
+.d-tree-node-actions {
+  display: none;
+  position: absolute;
+  left: 100%;
+}
+
+.d-tree-node {
+  display: flex;
+  position: relative;
+
+  &:hover .d-tree-node-actions {
+    display: flex;
+  }
+}
+
+.title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.filter-value {
+  color: #f50;
+}
