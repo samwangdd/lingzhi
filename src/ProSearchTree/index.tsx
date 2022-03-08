@@ -12,14 +12,14 @@ interface OperateProps {
   action: Action;
   onSubmit: (values) => Promise<any>;
 }
-interface SearchTreeProps {
+interface ProSearchTreeProps {
   data: DataNode[];
   onSelect: (keys: Key[], info: any) => void;
   operate: OperateProps[];
   maxLevel?: number;
 }
 
-const SearchTree = (props: SearchTreeProps) => {
+const ProSearchTree = (props: ProSearchTreeProps) => {
   const { data, onSelect, operate } = props;
   const _dataClone = cloneDeepWith(data);
   const [dataClone, setDataClone] = useState(_dataClone);
@@ -78,7 +78,7 @@ const SearchTree = (props: SearchTreeProps) => {
           title,
         };
       }),
-    [dataClone, searchValue]
+    [dataClone, searchValue],
   );
 
   return (
@@ -97,4 +97,4 @@ const SearchTree = (props: SearchTreeProps) => {
   );
 };
 
-export default SearchTree;
+export default ProSearchTree;
