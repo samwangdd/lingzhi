@@ -1,5 +1,7 @@
 # lingzhi
 
+> In ancient China, ganoderma lucidum was regarded as immortal grass because of its immortality and resurrection.
+
 ## Getting Started
 
 Install dependencies,

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Button, Input, message } from 'antd';
 import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
-import { awaitTo } from '@/utils/index';
 import { changeProps, deleteProps } from '../../utils';
-import styles from './index.less';
+import styles from './index.module.scss?module';
+import { awaitTo } from '@/utils/index';
 
 const DTreeNodeEditing = ({ node, changeData, treeData, onSubmit }) => {
   const [value, setValue] = useState(node.title);

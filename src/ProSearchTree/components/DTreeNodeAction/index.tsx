@@ -9,12 +9,13 @@ import {
 } from '@ant-design/icons';
 import cn from 'classnames';
 import { v4 as uuidV4 } from 'uuid';
+import { awaitTo } from '@/utils/index';
 import { changeProps, deleteProps, getParentKey, insertChild, insertObj } from '../../utils';
 import styles from '../DTreeNode/index.module.scss?module';
-import { awaitTo } from '@/utils/index';
+import { useCount } from '../../expandedKeysContext';
 
 const DTreeNodeAction = ({ node, changeData, treeData, operate, setOperateType }) => {
-  // 编辑节点
+  // 将节点改为编辑态
   const editTitle = (e) => {
     e.stopPropagation(); // 阻止冒泡
     setOperateType('update');
@@ -45,10 +46,12 @@ const DTreeNodeAction = ({ node, changeData, treeData, operate, setOperateType }
 
     changeData(data);
   };
+  const { dispatch } = useCount();
 
   // 添加子节点
   const addSubnode = (e) => {
     e.stopPropagation(); // 阻止冒泡
+    dispatch({ type: 'addKeys', payload: [node.key] }); // 展开当前节点
     setOperateType('addSub');
     let suffix = node.children?.length || 0; // 获取同级节点数
     let gKey = `${node.key}-${suffix}`;
